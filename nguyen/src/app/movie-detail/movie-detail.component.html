@@ -1,0 +1,15 @@
+<div *ngIf="movie" class="details">
+  <h3>Kiválasztottad: {{selectedMovie.name}}, Részletek: </h3>
+  <table style="width: 100%;">
+    <tr>
+      <td>Név: </td>
+      <td><input [(ngModel)]="movie.name" placeholder="Név"></td>
+    </tr>
+    <tr>
+      <td>Megjelenés éve: </td>
+      <td><input [(ngModel)]="movie.releaseYear" placeholder="ÉV"></td>
+    </tr>
+  </table>
+  <button (click)="save()">save</button>
+  <button (click)="goBack()">Vissza</button>
+</div>
